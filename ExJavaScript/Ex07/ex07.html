@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício 07</h1>
+    </header>
+    <script>
+        let mult3 = 0
+        let mult5 = 0
+        for(i = 0; i < 1000; i++) {
+            if (i % 3 == 0){
+                mult3 += i;
+            } 
+        }
+        for(i = 0; i < 1000; i++) {
+            if (i % 5 == 0){
+                mult5 += i;
+            }  
+        }
+        document.write('A soma de todos os multiplos de 3 é igual a ' + mult3 + '<br>')
+        document.write('A soma de todos os multiplos de 5 é igual a ' + mult5 + '<br>')
+        document.write('A soma de todos os multiplos de 3 e 5 é igual a ' + parseInt((mult3 + mult5)))
+        
+    </script>
+</body>
+</html>
